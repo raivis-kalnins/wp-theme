@@ -1,9 +1,3 @@
-/node_modules
-/vendor
-.DS_Store
-/dist
-/.vscode
-composer.lock
-.parcel-cache
-theme.json
-yarn.lock
+node_modules
+dist
+/vendor/

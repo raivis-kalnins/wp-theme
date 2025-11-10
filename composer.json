@@ -1,23 +1,15 @@
 {
-    "name": "freetimers/freetimers",
-    "description": "The starting point base theme for Freetimers Wordpress projects",
-    "type": "wordpress-theme",
-    "authors": [{
-        "name": "Raivis Kalnins",
-        "email": "raivis.kalnins@freetimers.com"
-    }],
-    "require": {
-        "stoutlogic/acf-builder": "^1.9"
-    },
+    "name": "tfa/tfa-theme",
     "autoload": {
         "psr-4": {
-            "CABALLERO\\": "inc/"
-        },
-        "files": ["inc/acf.php"]
-    },
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true
+            "WP\\TfaTheme\\": "inc/"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "Alan Gwilt",
+            "email": "alan.gwilt@t-f-a.co.uk"
+        }
+    ],
+    "require": {}
 }

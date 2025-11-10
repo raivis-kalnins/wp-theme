@@ -1,0 +1,56 @@
+.comp-sectors {
+    background-color: var(--wp-light-bg-color);
+    padding: 58px 0;
+
+    &:before {
+        content:'';
+        background-color: var(--wp-brand-color);
+        position: absolute;
+        display: block;
+        height: 35%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .card {
+        background: transparent;
+        padding: 0 15px;
+        border: 0;
+
+        &-header {
+            background: transparent;
+            padding: 0;
+            border: 0;
+
+            figure {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-body {
+            background: transparent;
+            padding: 30px 0;
+            border: 0;
+
+            p {
+                font-size: var(--bs-font-size-small);
+                color: rgba($darkest,.5);
+                
+                &.h3 {
+                    font-size: var(--bs-headings-h3-font-size);
+                    color: $darkest;
+                }
+            }
+        }
+
+        &-footer {
+            background: transparent;
+            padding: 0;
+            border: 0;
+        }
+    }
+}

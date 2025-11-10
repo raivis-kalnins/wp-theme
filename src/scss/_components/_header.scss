@@ -1,96 +1,45 @@
-header {
+.wp-site-blocks > header {
+	background-color: var(--wp-light-bg-color);
+	position: fixed;	
+	width: 100%;
+	z-index: 99;
+	left: 0;
+	top: 0;
 
-	.header {
-		
-		&-wrap {
+	.container:first-child {
+		position: relative;
+		padding: 10px 0;
+		height: 110px;
 
-			&_top {
-				justify-content: flex-end;
-				padding: 20px 0;
-				z-index: 1;
-				
-				& > * {
-					float: right;
-				}
+		.row {
+			height: 100%;
 
-				.wp-block-list {
-					list-style: none;
-				}
+			.btn.btn-primary {
+				margin: auto 15px;
 			}
 
-			&_nav {
-				padding: 0 0 20px 0;
+			p.top-contacts {
+				font-weight: $font-weight-bold;
+				font-size: $small;
+				position: absolute;
+				bottom: -20px;
+				right: 40px;
 
-				@include resp-max('s') {
-					position: absolute;
-					padding: 0;
-					width: 50%;
-					left: 20px;
-					top: 20px;
-				}
-					
-
-				.wp-block-site-logo {
-					padding-right: 15px;
-
-					@include resp-max('s') {
-						padding-right: 0;
-					}
-
-					img {
-						width: 74px !important;
-
-						@include resp-max('s') {
-							width: 100px;
-						}
-					}
+				em {
+					font-weight: $font-weight-bold;
+					text-transform: capitalize;
+					font-style: normal;
+					font-size: $small;
 				}
 
-				nav {
-					width: 100%;
+				strong {
+					font-weight: $font-weight-bold;
 				}
-				
-				.wp-block-navigation__container {
-					justify-content: flex-end;
-					margin-top: 5px;
-					width: 100%;
 
-					.wp-block-navigation-item {
-
-						&:nth-child(1),
-						&:nth-child(2),
-						&:nth-child(3),
-						&:nth-child(4) {
-							flex: auto;
-
-							@include resp-max('xl') {
-								flex: unset;
-							}
-
-							a, span {
-								font-family: $body-font-extrabold !important;
-								text-transform: uppercase;
-								font-weight: $bold;								
-							}						
-						}
-
-						&:nth-child(4) {
-							margin-right: 380px;
-
-							@include resp-max('xl') {
-								margin-right: 30px;
-							}
-						}
-					}
+				a {
+					margin-right: 10px;
 				}
 			}
 		}
-	}
-}
-
-.wp-block-navigation__responsive-container {
-
-	@include resp-max('s') {
-		padding: 20px !important;
 	}
 }

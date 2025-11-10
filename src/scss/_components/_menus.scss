@@ -1,0 +1,37 @@
+.main-top-menu {
+	background-color: $grey-txt;
+	position: relative;
+	min-height: 30px;
+
+	.container:first-child {
+		height: auto !important;
+		padding: 0 !important;
+	}
+
+	&--nav {
+		border-radius: 0;	
+		height: auto !important;
+		width: 100%;
+		padding: 0;		
+
+		.list-group-item {
+			background: transparent !important;
+			text-align: center !important;
+			border-radius: 0 !important;
+			color: var(--wp-white-color);
+			font-weight: $weight-bold;
+			max-width: fit-content;
+			white-space: nowrap;
+    		line-height: 30px;
+			padding: 5px 62px;
+			font-size: $small;				
+			display: flex;
+			flex: auto;				
+			border: 0;
+
+			&:hover {
+				background-color: var(--wp-brand-color) !important;
+			}
+		}
+	}
+}

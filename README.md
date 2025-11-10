@@ -1,30 +1,39 @@
-# wp-base
-WordPress base theme
+# WP Theme - New Version
 
-Features:
-- Working with ( ACF / Gutenberg (ReactJS) / Bootstrap grid) block builder plugin https://github.com/raivisFT/wp-boot-blocks
-- Yarn packages https://yarnpkg.com
-- Vite build tool https://github.com/vitejs/vite
-- ACF Builder https://github.com/StoutLogic/acf-builder/wiki
-- Alpine.js lightweight, JavaScript framework https://alpinejs.dev
-- Swiper JS / Data Tables JS / Google Charts JS / Select 2
+This repository is for the development of a new version of the current WP theme. The goal is to create a lighter theme with only the basic requirements needed to set up a project. This includes a focus on simplicity, maintainability, and leveraging Gutenberg blocks for future builds.
 
-1. Before run this theme for new project:
-    1.1 First need to add & run plugin ACF Pro: https://www.advancedcustomfields.com/pro/ & later use https://github.com/StoutLogic/acf-builder
-    1.2 Clone https://github.com/raivisFT/wp-base
-    1.3 For Gutenberg Block customization TFA plugin https://github.com/raivisFT/wp-boot-blocks
+---
 
-2. Run "composer install" - if Win then https://getcomposer.org/download/ - Download and run Composer-Setup.exe (all default setting only need to check any localhost php.ini) 
-    - after success instalation and run will be composer.lock & new dir "vendor"
+## Goals for the New Theme
 
-3. Run "yarn" - you can add more needed packages https://yarnpkg.com
-    - yarn watch
-    - yarn build
+### General Features
+- **Lighter Base Theme**: Focus on minimalism and essential features only.
+- **Basic Stylesheets and Templates**: Provide a foundation for project setup.
+- **Future Compatibility**: Utilize Gutenberg blocks for layout and functionality.
 
-* JS & CSS dist directory will be minified and then need to check speed test for desktop & mobile https://developers.google.com/speed/pagespeed/insights/
+### Styling
+- Use **fresh SASS** for maintainable and modular styles.
+- **No Page-Specific Styling**: Avoid adding styles tailored to individual pages.
+- Remove JSON styling and instead rely on **Gutenberg’s global styling options**.
 
-Recomended extra plugins:
-- https://wordpress.org/plugins/duplicate-page/
-- https://en-gb.wordpress.org/plugins/all-in-one-wp-migration/
-- https://wordpress.org/plugins/simple-custom-post-order/
-- https://en-gb.wordpress.org/plugins/redirection/
+### Components
+- Move functionality like sliders and other reusable components to **WP Blocks** instead of embedding them in the main theme.
+- Keep component styling **simple** and **easily adaptable** for future projects.
+
+---
+
+## Editor Goals
+- Ensure the **WordPress editor** reflects the frontend layout to make content editing intuitive for clients.
+
+---
+
+## To Be Investigated
+- **SEO Metadata**:  
+  - Raivis added an additional metadata box for SEO purposes.  
+  - Check with Max or the appropriate digital team member whether this is still needed, or if the **Yoast SEO** boxes are sufficient.
+
+---
+
+This theme is intended to streamline workflows, improve maintainability, and enhance client usability. Further updates will be made as development progresses.
+
+![Screenshot](screenshot.jpg)

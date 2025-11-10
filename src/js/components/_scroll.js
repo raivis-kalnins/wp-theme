@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-	const 	$ = jQuery.noConflict();
+	const 	$ = jQuery.noConflict(),
+			page = $('html, body');
 
 	// Scroll Up button
 	$('.scroll-up').click(function(e) {
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	// Scroll Down button
 	$('.scroll-down').click(function(e) {
-		var SlideHeight = $('.section__home-hero').height();
+		const SlideHeight = $('.section__home-hero').height();
 		// /console.log(SlideHeight);
 		page.animate({
 			scrollTop : page.scrollTop() + SlideHeight,
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				if (target.length) {
 					$('html, body').animate({
 						scrollTop: target.offset().top - 85
-					}, 1000);
+					}, 500);
 					return false;
 				}
 			}

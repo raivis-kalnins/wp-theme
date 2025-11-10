@@ -1,0 +1,68 @@
+@import url('//fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+//@import url("../../assets/fonts/helvetica-neue/stylesheet.css");
+$headings-font: 'Albert Sans', sans-serif;
+$body-font: 'Albert Sans', sans-serif;
+
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$container-width: 1200px;
+
+$container-margin-right: calc( -15px - ( ( 100vw - $container-width ) / 2 ) );
+$container-margin-left: calc( 15px + ( ( 100vw - $container-width ) / 2 ) );
+
+// colour variables
+$brandcolor: #F28C2E;
+$grey-txt: #333333;
+$light-bg: #F2F3F3;
+$white: #FFFFFF;
+$grey-light: #EDEDED;
+$darkest: #000000;
+$green: #48C52C;
+$red: #FF0000;
+
+// bootstrap theme variables
+$headings-color: $darkest;
+$primary: $brandcolor;
+
+$opacities: (
+	'10': 0.1,
+	'15': 0.15,
+	'20': 0.2,
+	'50': 0.5,
+	'70': 0.7,
+);
+
+// Font weight
+$weight-thin: 100;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+
+$letter-spacing-heading: 0.5px;
+$letter-spacing-body: 0;
+
+// Font - Sizes
+$font-sizes: (
+	'small': 14px,
+	'body': 16px,
+	'large': 20px,
+	'h1': 45px,
+	'h2': 30px,
+	'h3': 20px,
+	'h4': 16px,
+	'h5': 16px,
+	'h6': 12px,
+);
+
+$small: map-get($font-sizes, small);
+$body-size: map-get($font-sizes, body);
+$large: map-get($font-sizes, large);
+$h1-font-size: map-get($font-sizes, h1);
+$h2-font-size: map-get($font-sizes, h2);
+$h3-font-size: map-get($font-sizes, h3);
+$h4-font-size: map-get($font-sizes, h4);
+$h5-font-size: map-get($font-sizes, h5);
+$h6-font-size: map-get($font-sizes, h6);

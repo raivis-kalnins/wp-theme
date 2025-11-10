@@ -1,0 +1,36 @@
+:root {
+	// Colours
+	--bs-body-colour: #{$grey-txt};
+	--bs-headings-colour:var(--bs-body-colour);	
+	--wp-brand-color: #{$brandcolor};	
+	--wp-text-color: #{$grey-txt};
+	--wp-light-bg-color: #{$light-bg};
+	--wp-green-color: #{$green};
+	--wp-white-color: #{$white};
+	--wp-grey-light-color: #{$grey-light};
+	--wp-black-color: #{$dark};
+	--wp-red-color: #{$red};
+
+	// Fonts
+	--bs-body-font: #{$body-font};
+	--bs-body-font-size: #{$body-size};
+	--bs-font-size-medium: #{$large};
+	--bs-font-size-small:  #{$small};
+	--wp--preset--font-size--small: #{$small};
+	--bs-heading-font-weight: #{$font-weight-semibold};
+	--bs-body-font-weight: #{$font-weight-normal};
+	--bs-heading-font: #{$headings-font};
+	--bs-body-line-height: 1.4;
+	--bs-headings-h1-font-size: #{$h1-font-size};
+	--bs-headings-h1-line-height: 1.4;
+	--bs-headings-h2-font-size: #{$h2-font-size};
+	--bs-headings-h2-line-height: 1.4;
+	--bs-headings-h3-font-size: #{$h3-font-size};
+	--bs-headings-h3-line-height: 1.4;
+	--bs-headings-h4-font-size: #{$h4-font-size};
+	--bs-headings-h4-line-height: 1.2;
+	--bs-headings-h5-font-size: #{$h5-font-size};
+	--bs-headings-h5-line-height: 1.2;
+	--bs-headings-h6-font-size: #{$h6-font-size};
+	--bs-headings-h6-line-height: 1.2;
+}
