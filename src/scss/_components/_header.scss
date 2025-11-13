@@ -16,6 +16,14 @@
 
 			.btn.btn-primary {
 				margin: auto 15px;
+
+				@include media-breakpoint-down(xxl) {
+					margin-bottom: 30px;
+				}
+
+				@include media-breakpoint-down(md) {
+					display: none;
+				}
 			}
 
 			p.top-contacts {
@@ -24,6 +32,12 @@
 				position: absolute;
 				bottom: -20px;
 				right: 40px;
+
+				@include media-breakpoint-down(md) {
+					white-space: nowrap;
+					padding-left: 10px;
+					right: unset;
+				}
 
 				em {
 					font-weight: $font-weight-bold;
@@ -40,6 +54,13 @@
 					margin-right: 10px;
 				}
 			}
+		}
+	}
+
+	.dgwt-wcas-search-form {
+
+		@include media-breakpoint-down(lg) {
+			display: none !important;
 		}
 	}
 }
