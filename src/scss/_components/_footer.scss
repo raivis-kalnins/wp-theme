@@ -1,9 +1,9 @@
 .wp-site-blocks>footer {
-    --bs-link-hover-color-rgb: #000;
-	--bs-link-color-rgb: #000;	
+    --bs-link-hover-color-rgb: #fff;
+	--bs-link-color-rgb: #fff;	
 	padding: 40px 0;
 	max-width: 100vw;
-	overflow: hidden;		
+	overflow: hidden;
 
 	p, li, span, address {
 		color: var(--wp-text-color);
@@ -24,21 +24,6 @@
 			font-size: var(--bs-font-size-small);
 			white-space: wrap;
 			max-width: 270px;
-		}
-
-		&::after {
-			content:'';
-			background: transparent url('../../assets/img/svg/wp-heart.svg') right center / auto no-repeat;
-			transform: translateY(-50%);
-			position: absolute;
-			height: 16px;
-			width: 10px;
-			right: 0;
-			top: 50%;
-
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
 		}
 	}
 }

@@ -11,11 +11,12 @@ $container-margin-right: calc( -15px - ( ( 100vw - $container-width ) / 2 ) );
 $container-margin-left: calc( 15px + ( ( 100vw - $container-width ) / 2 ) );
 
 // colour variables
-$brandcolor: #F28C2E;
+$brandcolor: #ff5900;
+$grey-light: #EDEDED;
+$grey-dark: #4a4549;
 $grey-txt: #333333;
 $light-bg: #F2F3F3;
 $white: #FFFFFF;
-$grey-light: #EDEDED;
 $darkest: #000000;
 $green: #48C52C;
 $red: #FF0000;
