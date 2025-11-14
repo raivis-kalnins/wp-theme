@@ -1003,12 +1003,16 @@ body {
 	&.wp-nav-menu__search_bar {
 
 		.navbar_search-bar {
+			display: block !important;
+			margin-top: 5px;
+			float: right;
+		}
+	}
 
-			@include media-breakpoint-down(xl) {
-				display: block !important;
-				margin-top: 5px;
-        		float: right;
-			}
+	&.wp-nav-menu__lang {
+
+		#lang-sw {
+			display: block;
 		}
 	}
 }

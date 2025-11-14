@@ -355,16 +355,11 @@
 
 		&__input {
 			position: absolute;
-			line-height: 1;
-			display: none;		    
+			line-height: 1;	    
 			height: 24px;
 			right: 78px;
 			padding: 0;
-			z-index: 3;			
-
-			@include media-breakpoint-down(xl) {
-				display: block;
-			}
+			z-index: 3;
 		}
 		
 		&__button {
