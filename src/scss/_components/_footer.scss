@@ -40,20 +40,5 @@
 			max-width: 270px;
 			float: unset;
 		}
-
-		&::after {
-			content:'';
-			background: transparent url('../../assets/img/svg/wp-heart.svg') right center / auto no-repeat;
-			transform: translateY(-50%);
-			position: absolute;
-			height: 16px;
-			width: 10px;
-			right: 0;
-			top: 50%;
-
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
-		}
 	}
 }

@@ -645,6 +645,7 @@ header {
 	// Header Top Menu wrap
 	.header-top-menu {
 		background-color: var(--wp-brand-color) !important;
+		border-bottom: rgba($white,0.55) solid 1px;
 		position: relative;
 		height: 43px;
 
@@ -713,10 +714,10 @@ header {
 
 	// Main Menu wrap
 	.main-top-menu {
-		animation: fade-in 1s linear both;
+		animation: fade-in 1s linear both;		
 		background-color: $grey-txt;
 		position: relative;
-		height: 78px;
+		height: 58px;
 
 		.navbar-nav {
 

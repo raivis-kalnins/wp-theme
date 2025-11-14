@@ -44,6 +44,7 @@ add_action('admin_enqueue_scripts', 'wp_enqueue_custom_admin_script_style');
  */
 function wp_menus() {
 	$locations = array(
+		'wp-header-top-menu'   => __( 'WP Header Top Menu', 'wp' ),
 		'wp-header-menu'   => __( 'WP Header Menu', 'wp' ),
 		'wp-footer-menu'  => __( 'WP Footer Menu', 'wp' ),
 	);

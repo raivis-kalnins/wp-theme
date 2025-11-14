@@ -1,15 +1,20 @@
 .wp-site-blocks > header {
-	background-color: var(--wp-light-bg-color);
+	background-color: var(--wp-brand-color);
 	position: fixed;	
 	width: 100%;
 	z-index: 99;
 	left: 0;
 	top: 0;
 
+	.container {
+		padding-right: 0;
+		padding-left: 0;		
+	}
+
 	.strip:nth-child(2) .container {
 		position: relative;
-		padding: 10px 0;
 		height: 110px;
+		padding: 0;		
 
 		.row {
 			height: 100%;

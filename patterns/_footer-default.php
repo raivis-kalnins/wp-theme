@@ -5,7 +5,7 @@
  * Categories: wp-patterns-main-core
  */
 $theme_url = get_template_directory_uri();
-$logo_url = $theme_url.'/assets/img/svg/anco-logo-w.svg';
+$logo_url = $theme_url.'/assets/img/logo.png';
 $wp_h = $theme_url.'/assets/img/svg/wp-heart.svg';
 $wp_foo = 'Designed by WP ';
 $home_url = get_home_url();

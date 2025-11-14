@@ -22,15 +22,8 @@ $tel_url = $f['tel']['url'] ?? '';
 <!-- wp:areoi/strip {"block_id":"a373d977-5955-4ce6-a7e4-e8347e72640c"} -->
 	<!-- wp:areoi/container {"block_id":"70f0219d-a639-4cef-8deb-028fafb8bda9","height_dimension_xs":"100","height_unit_xs":"%"} -->
 		<!-- wp:areoi/row {"block_id":"c8a6830f-e100-4263-87ac-fc64ac8ec00d","height_dimension_xs":"100","height_unit_xs":"%"} -->
-			<!-- wp:areoi/column {"block_id":"43f70fd1-3d69-4f1c-b372-7348450195a4","vertical_align_xs":"align-self-center","col_xs":"col-12","col_lg":"col-lg-4"} -->
-				<!-- wp:site-logo {"width":260,"shouldSyncIcon":false} /-->
-			<!-- /wp:areoi/column -->
-			<!-- wp:areoi/column {"block_id":"56dff0a7-933e-4624-b7a1-486fb46e6ca9","col_xs":"col-12","col_lg":"col-lg-8","className":"d-flex flex-row "} -->
-				<!-- wp:fibosearch/search /-->
-				<!-- wp:areoi/button {"block_id":"d7b87fcb-c353-422b-a012-244957d394e4","url":"http://anco-storage.local/my-account/","text":"Login/register"} /-->
-				<!-- wp:paragraph {"className":"top-contacts"} -->
-					<p class="top-contacts"><em>email:</em> <a href="mailto:<?=$email?>" target="_blank" rel="noreferrer noopener"><strong><?=$email?></strong></a>&nbsp;<em>tel:</em> <a href="tel:<?=$tel_url?>" target="_blank" rel="noreferrer noopener"><strong><?=$tel_title?></strong></a></p>
-				<!-- /wp:paragraph -->
+			<!-- wp:areoi/column {"block_id":"43f70fd1-3d69-4f1c-b372-7348450195a4","vertical_align_xs":"align-self-center","col_xs":"col-12"} -->
+				<!-- wp:site-logo {"width":360,"shouldSyncIcon":false} /-->
 			<!-- /wp:areoi/column -->
 		<!-- /wp:areoi/row -->
 	<!-- /wp:areoi/container -->
