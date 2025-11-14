@@ -21,8 +21,8 @@ $img1 = $theme_url.'/assets/img/bg/about-img1-min.png';
 			<!-- /wp:paragraph -->
 		<!-- /wp:areoi/column -->
 		<!-- wp:areoi/column {"block_id":"a926e2fa-f7a4-4bd9-a7e9-eed450d2ad31","padding_top_xs":"30","col_xs":"col-12"} -->
-			<!-- wp:image {"id":440,"width":"1200px","sizeSlug":"full","linkDestination":"none"} -->
-			<figure class="wp-block-image size-full is-resized"><img src="<?=$img1?>" alt="" class="wp-image-440" style="width:1200px"/></figure>
+			<!-- wp:image {"id":440,"width":"1320px","sizeSlug":"full","linkDestination":"none"} -->
+			<figure class="wp-block-image size-full is-resized"><img src="<?=$img1?>" alt="" class="wp-image-440" style="width:1320px"/></figure>
 			<!-- /wp:image -->
 		<!-- /wp:areoi/column -->
 	<!-- /wp:areoi/row -->

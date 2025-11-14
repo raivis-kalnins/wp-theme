@@ -2,13 +2,13 @@
     "name": "wp/wp-theme",
     "autoload": {
         "psr-4": {
-            "WP\\TfaTheme\\": "inc/"
+            "WP\\WPTheme\\": "inc/"
         }
     },
     "authors": [
         {
-            "name": "Alan Gwilt",
-            "email": "alan.gwilt@t-f-a.co.uk"
+            "name": "DP",
+            "email": "info@dp.click"
         }
     ],
     "require": {}

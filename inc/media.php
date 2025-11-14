@@ -46,7 +46,7 @@ function wp_default_image_sizes(): array
  * Build the registry from defaults + external filters, then boot it.
  */
 (function () {
-    $defs = apply_filters('tfa/image_sizes', tfa_default_image_sizes());
+    $defs = apply_filters('wp/image_sizes', wp_default_image_sizes());
     $registry = ImageSizeRegistry::fromArrays((array) $defs);
     $registry->boot();
 })();

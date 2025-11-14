@@ -79,3 +79,11 @@ body {
 hr.is-style-wide {
 	width: 100%;
 }
+
+a {
+	transition: all .2s ease;
+
+	&:hover {
+		transition: all .2s ease;
+	}
+}

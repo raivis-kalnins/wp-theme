@@ -352,8 +352,17 @@
 	&-search {
 
 		&__input {
+			position: absolute;
 			line-height: 1;
+			display: none;		    
+			height: 24px;
+			right: 78px;
 			padding: 0;
+			z-index: 3;			
+
+			@include media-breakpoint-down(xl) {
+				display: block;
+			}
 		}
 		
 		&__button {
@@ -435,7 +444,7 @@
 			color: var(--wp-black-color);
 
 			a {
-				color: var(--wp-black-color);
+				color: var(--tfa-black-color);
 			}
 		}
 	}
