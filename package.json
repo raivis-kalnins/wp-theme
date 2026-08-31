@@ -1,0 +1,20 @@
+{
+  "name": "dp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "prod": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.89.1",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "glightbox": "^3.3.1"
+  }
+}

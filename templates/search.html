@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header","layout":{"inherit":false}} /-->
+<!-- wp:spacer {"height":"150px"} --><div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+<!-- wp:group {"tagName":"div"},"className":"wp-container boxed","layout":{"inherit":true}} -->
+<div class="wp-block-group wp-container container">
+	<!-- wp:spacer {"height":"100px"} --><div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+	<!-- wp:heading {"level":1} --><h1 class="wp-block-heading">Search Results</h1><!-- /wp:heading -->
+	<!-- wp:spacer {"height":"20px"} --><div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+	<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"left","className":"search-box boxed"} /-->
+	<!-- wp:spacer {"height":"70px"} --><div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+	<!-- wp:query {"queryId":21,"query":{"perPage":7,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"list","columns":3}} -->
+    <div class="wp-block-query">
+		<!-- wp:post-template -->
+			<!-- wp:post-terms {"term":"category"} /-->
+			<!-- wp:post-title {"isLink":true,"fontSize":"medium"} /-->
+			<!-- wp:post-date /-->
+			<!-- wp:post-excerpt /-->
+			<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#00000021"}}} --><hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#00000021;color:#00000021"/><!-- /wp:separator -->
+			<!-- wp:spacer {"height":"20px"} --><div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+		<!-- /wp:post-template -->
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+		<!-- wp:query-pagination-previous /-->
+		<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+	</div>
+    <!-- /wp:query -->
+</div>
+<!-- /wp:group -->
+<!-- wp:spacer {"height":"70px"} --><div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer","layout":{"inherit":false}} /-->

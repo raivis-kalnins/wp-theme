@@ -1,0 +1,44 @@
+<?php
+/**
+ * Title: Blogs Page
+ * Slug: blogs-page
+ * Categories: wp-patterns-main-core
+ */
+$theme_url = get_template_directory_uri();
+$home_url = get_home_url();
+$f = get_fields('option'); //var_dump($f);
+$company_address = $f['company_address'] ?? '';
+?>
+<!-- wp:spacer {"height":"150px"} --><div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+ <?php if(ICL_LANGUAGE_CODE=='en'): ?><?=do_shortcode('[custom_hero_news]')?><?php elseif(ICL_LANGUAGE_CODE=='lv'): ?><?=do_shortcode('[custom_hero_jaunumi]')?><?php endif; ?>
+<!-- wp:areoi/container {"block_id":"6ff0d95c-c224-449e-92a7-8ff81c1ead8a","className":"main"} -->
+	<!-- wp:areoi/row {"block_id":"9b19c11c-6a30-4ae0-8e92-d33dbc3422fd","className":"breadcrumb"} -->
+		<!-- wp:areoi/column {"block_id":"8887f4b5-237d-4977-86d5-98ea0eca6148"} -->
+			<!-- wp:yoast-seo/breadcrumbs /-->
+			<!-- wp:separator {"className":"is-style-wide"} -->
+				<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+			<!-- /wp:separator -->
+		<!-- /wp:areoi/column -->
+	<!-- /wp:areoi/row -->
+	<!-- wp:areoi/row {"block_id":"ef509c52-1fae-4f93-91c1-30340dc64f7d","className":"header-more"} -->
+		<!-- wp:areoi/column {"block_id":"eb4ea338-a529-4909-9162-f759779f7f00","col_xl":"col-xl-6"} -->
+			<!-- wp:heading -->
+				<h2 class="wp-block-heading"><?php if(ICL_LANGUAGE_CODE=='en'): ?>All Articles<?php elseif(ICL_LANGUAGE_CODE=='lv'): ?>Visi Jaunumi<?php endif; ?></h2>
+			<!-- /wp:heading -->
+			<!-- wp:post-content /-->
+		<!-- /wp:areoi/column -->
+	<!-- /wp:areoi/row -->
+	<!-- wp:areoi/row {"className":"header-tools"} -->
+		<!-- wp:areoi/column {"block_id":"023d0b36-6936-4ff2-b4b9-eb215f337157","col_xl":"Default"} -->
+			<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search","buttonText":"Search","buttonPosition":"no-button"} /-->
+			<?=do_shortcode('[cat_listed_cpt]')?>
+		<!-- /wp:areoi/column -->
+	<!-- /wp:areoi/row -->
+	<!-- wp:separator {"className":"is-style-wide"} -->
+		<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+	<!-- /wp:separator -->
+    <!-- wp:areoi/row {"block_id":"d7e22e25-20c2-44ed-bf75-b107fc8bbfae","className":"shortcode-articles"} -->
+		<!-- wp:areoi/column {"block_id":"2157d6b1-bc3c-4b22-a71a-1993d10354e3"} --><?=do_shortcode('[posts_cpt]')?><!-- /wp:areoi/column -->
+	<!-- /wp:areoi/row -->
+<!-- /wp:areoi/container -->
+<!-- wp:spacer {"height":"50px"} --><div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
